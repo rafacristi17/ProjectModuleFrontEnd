@@ -1,0 +1,192 @@
+:root{
+    --primary:#efdfdf;
+    --secondary:#d09769;
+    --text-color:#000;
+    --text-secondary:#bf9f88;
+    --text-tertiary:#f6a68d;
+}
+
+*{
+    font-family:"Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* não permite a ultrapassagem do css das bordas da tela ipc*/
+}
+
+body{
+    padding-bottom: 500px;
+}
+
+
+/*Descrição do evento formulário*/
+
+#descricaodoevento{
+    background:linear-gradient(rgba(224, 217, 206, 0.8), rgba(224,217, 206, 0.8)),
+    url('../img/WD.png') ;
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color:var(--text-color)
+}
+
+#contextoevento h2,
+#contextoevento, .dataevento{
+    color: var(--secondary);
+}
+
+#contextoevento h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+#contextoevento .texttodescritivo{
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#contextoevento p{
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+#contextoevento .dataevento{
+    font-weight: bold;
+}
+#formulariosubscricao{
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 22%;
+}
+
+#formulariosubscricao p{
+    font-size: 1.5em;
+    color:var(--text-color);
+    margin-bottom: 1em;
+}
+
+.grupoformulario{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.grupoformulario label{
+    color: var(--text-color);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+.grupoformulario input, 
+.grupoformulario select{
+    padding: 6px 8px;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+
+}
+.btn{
+    background-color: var(--primary);
+    color:var(--text-secondary);
+    text-transform: uppercase;
+    width: 100%;
+    border:none;
+    padding: 12px;
+    cursor: pointer;
+    opacity:0.8;
+}
+
+.btn:hover{
+    opacity:1;
+}
+
+/*Modelos mais vendidos*/
+
+#maisprocurados h2{
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+
+}
+.modelos{
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+.models{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-secondary)
+}
+
+.models .modelimg{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+#model1{
+    background-image: url("../img/Cópia\ de\ Cópia\ de\ Sem\ nome.png");
+}
+#model2{
+    background-image: url("../img/CarnavalDiv04.jpg");
+}
+#model3{
+    background-image: url("../img/Pais11.jpg");
+}
+#model4{
+    background-image: url("../img/Divulgação--5-8.png");
+}
+
+/*localidade*/
+
+#localidade{
+    height: 400px;
+    background:linear-gradient(rgba(224, 217, 206, 0.8), rgba(224,217, 206, 0.8)),
+    url('../img/1.png') ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-bottom: 3em;
+}
+
+#endereco, 
+#about-localidade{
+    max-width: 30%;
+}
+
+#endereco{
+    display: flex;
+}
+#endereco i {
+    color: var(--secondary);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+#detalhes{
+    text-align: center;
+    font-size: 1.3em;
+}
+#about-localidade h3{
+    color:var(--secondary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+#about-localidade p { 
+    line-height: 1.5em;
+}
